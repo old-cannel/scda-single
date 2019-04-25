@@ -6,7 +6,6 @@ import com.scda.security.vo.SysRoleApiVo;
 import com.scda.security.vo.SysUserVo;
 import org.apache.ibatis.annotations.Param;
 import org.apache.ibatis.annotations.Select;
-import org.springframework.security.access.method.P;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;

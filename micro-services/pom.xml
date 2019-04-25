@@ -31,7 +31,7 @@
         <mybatis.plus.starter.version>3.0.1</mybatis.plus.starter.version>
         <mysql.driver.version>5.1.39</mysql.driver.version>
         <hutool.version>4.1.14</hutool.version>
-        <dockerfile-maven-version>1.4.4</dockerfile-maven-version>
+        <dockerfile-maven-version>1.4.10</dockerfile-maven-version>
     </properties>
     <dependencyManagement>
         <dependencies>
@@ -83,15 +83,17 @@
                 <configuration>
                     <source>${java.version}</source>
                     <target>${java.version}</target>
+                    <encoding>UTF-8</encoding>
                 </configuration>
             </plugin>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
+
         </plugins>
         <pluginManagement>
             <plugins>
+                <plugin>
+                    <groupId>org.springframework.boot</groupId>
+                    <artifactId>spring-boot-maven-plugin</artifactId>
+                </plugin>
                 <plugin>
                     <groupId>com.spotify</groupId>
                     <artifactId>dockerfile-maven-plugin</artifactId>
